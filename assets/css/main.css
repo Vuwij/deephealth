@@ -2953,7 +2953,7 @@
 			}
 
 		.wrapper.style4 {
-			background-color: black;
+			background-image: url("../../images/generic.jpg");;
 		}
 
 		.wrapper.style5 {
@@ -3645,19 +3645,43 @@
 			}
 
 		}
+/* map */
+		.map{
+			height: 450px !important;
+			border:0 !important; 
+			width: 45% !important;
+		}
+@media screen and (max-width: 980px) {
 
+			.map {
+				display: block;
+				width: 100% !important;
+				text-align: center;
+			}
+
+				
+
+		}
+
+		@media screen and (max-width: 736px) {
+
+			.map {
+				width: 100% !important;
+			}
+
+		}
 /* Main */
 
 	#main > header {
 		padding: 12em 0 10em 0 ;
-		background-image:  url("../../images/banner.jpg");
-		background-image:  url("../../images/banner.jpg");
-		background-image:  url("../../images/banner.jpg");
-		background-image:  url("../../images/banner.jpg");
+		background-image:  url("../../images/generic.jpg");
+		background-image:  url("../../images/generic.jpg");
+		background-image:  url("../../images/generic.jpg");
+		background-image:  url("../../images/generic.jpg");
 		background-attachment: fixed;
 		background-position: center center;
 		background-repeat: no-repeat;
-		background-size: contain;
+		background-size: cover;
 		text-align: cover;
 	}
 
@@ -3722,9 +3746,10 @@
 
 	#footer {
 		padding: 6em 0 4em 0 ;
-		background-color: black;
+		background-color: black !important;
 		background-image: none !important;
 		text-align: center;
+		opacity: 1 !important;
 	}
 
 		#footer .icons {
@@ -3820,12 +3845,18 @@
 		background: none;
 	}
 
-	body.is-mobile.landing #banner,
+	body.is-mobile.landing #banner{
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	
+		background-image: url("../../images/banner.jpg");
+		background-image: url("../../images/banner.jpg");
+		background-image: url("../../images/banner.jpg");
+		background-image: url("../../images/banner.jpg");
+	}
 	body.is-mobile.landing .wrapper.style4 {
-		background-image: url("../../images/banner.jpg");
-		background-image: url("../../images/banner.jpg");
-		background-image: url("../../images/banner.jpg");
-		background-image: url("../../images/banner.jpg");
+		background-color: black;
 		background-position: center center;
 		background-repeat: no-repeat;
 		background-size: cover;
